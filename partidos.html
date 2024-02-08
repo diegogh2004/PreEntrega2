@@ -1,140 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Partidos</title>
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Font-->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Partidos</title>
-</head>
-<body>
-    <!--Header-->
+  </head>
+  <body class="bodypartidos">
     <header>
-        <!--Menu de Navegacion-->
-        <nav id="menu">
-            <ul id="lista">
-                <li>
-                    <a href="index.html"><img id="logo" src="multimedia/logonba.png" alt="Logo de la pagina"></a>
+        <nav class="navbar navbar-expand-lg navbar-diego">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img id="logonavbar" src="multimedia/logonba.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="equipos.html">Equipos</a>
                 </li>
-                <li class="opciones">
-                    <a href="index.html">Inicio</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="partidos.html">Partidos</a>
                 </li>
-                <li class="opciones">
-                    <a href="equipos.html">Equipos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="posiciones.html">Posiciones</a>
                 </li>
-                <li class="opciones">
-                    <a href="partidos.html">Partidos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
                 </li>
-                <li class="opciones">
-                    <a href="posiciones.html">Posiciones</a>
-                </li>
-                <li class="opciones">
-                    <a href="noticias.html">Noticias</a>
-                </li>
-            </ul>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
-    <!--Fin Header-->
+
     <!--Container de partidos-->
     <div class="titulo-partidos">
-    <p>Partidos de hoy</p>
-    </div>
-    <div class="container-partidos">
-        <!--Partido 1-->
-        <ul class="partido1">
-            <li>
-                <img id="logo1" src="multimedia/este/bucks.png" alt="Milwaukee Bucks">
-            </li>
-            <li>
-                <img id="logo2" src="multimedia/este/celtics.png" alt="Boston Celtics">
-            </li>
-            <li>
-                <p>21:00 TD Garden, BOS</p>
-            </li>
-        </ul>
-        <!--Partido 2-->
-        <ul class="partido2">
-            <li>
-                <img id="logo1" src="multimedia/este/cavaliers.png" alt="Cleveland Cavaliers">
-            </li>
-            <li>
-                <img id="logo2" src="multimedia/este/heat.png" alt="Miami Heat">
-            </li>
-            <li>
-                <p>21:00 Kaseya Center, MIA</p>
-            </li>
-        </ul>
-        <!--Partido 3-->
-        <ul class="partido3">
-            <li>
-                <img id="logo1" src="multimedia/este/sixers.png" alt="Philadelphia 76ers">
-            </li>
-            <li>
-                <img id="logo2" src="multimedia/este/pacers.png" alt="Indiana Pacers">
-            </li>
-            <li>
-                <p>22:00 Bankers Life Fieldhouse, IND</p>
-            </li>
-        </ul>
-    </div>
-    <div class="container-partidos">
-        <!--Partido 4-->
-        <ul class="partido4">
-            <li>
-                <img id="logo1" src="multimedia/oeste/clippers.png" alt="Los Angeles Clippers">
-            </li>
-            <li>
-                <img id="logo2" src="multimedia/oeste/timberwolves.png" alt="Minnesota Timberwolves">
-            </li>
-            <li>
-                <p>22:00 Target Center, MIN</p>
-            </li>
-        </ul>
-        <!--Partido 5-->
-        <ul class="partido5">
-            <li>
-                <img id="logolakers" src="multimedia/oeste/lakers.png" alt="Los Angeles Lakers">
-            </li>
-            <li>
-                <img id="logo2" src="multimedia/oeste/suns.png" alt="Phoenix Suns">
-            </li>
-            <li>
-                <p>00:00 Footprint Center, PHX</p>
-            </li>
-        </ul>
-        <!--Partido 6-->
-        <ul class="partido6">
-            <li>
-                <img id="logo1" src="multimedia/oeste/rockets.png" alt="Houston Rockets">
-            </li>
-            <li>
-                <img id="logo2" src="multimedia/oeste/warriors.png" alt="Golden State Warriors">
-            </li>
-            <li>
-                <p>00:00 Chase Center, SF</p>
-            </li>
-        </ul>
-    </div>
-    <!--Fin Container-->
-    <!--Footer-->
-    <footer>
-        <ul id="redes3">
-            <li>
-                <a href="https://www.instagram.com/nba/" target="_blank">Instagram</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/nba" target="_blank">X</a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/nba" target="_blank">Facebook</a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@NBA" target="_blank">Youtube</a>
-            </li>
-        </ul>
-    </footer>
-    <!--Fin Footer-->
-</body>
+        <h1>Partidos de hoy</h1>
+        </div>
+        <div class="container-partidos">
+            <!--Partido 1-->
+            <ul class="partido1">
+                <li>
+                    <img id="logo1" src="multimedia/este/bucks.png" alt="Milwaukee Bucks">
+                </li>
+                <li>
+                    <img id="logo2" src="multimedia/este/celtics.png" alt="Boston Celtics">
+                </li>
+                <li>
+                    <p>21:00 TD Garden, BOS</p>
+                </li>
+            </ul>
+            <!--Partido 2-->
+            <ul class="partido2">
+                <li>
+                    <img id="logo1" src="multimedia/este/cavaliers.png" alt="Cleveland Cavaliers">
+                </li>
+                <li>
+                    <img id="logo2" src="multimedia/este/heat.png" alt="Miami Heat">
+                </li>
+                <li>
+                    <p>21:00 Kaseya Center, MIA</p>
+                </li>
+            </ul>
+            <!--Partido 3-->
+            <ul class="partido3">
+                <li>
+                    <img id="logo1" src="multimedia/este/sixers.png" alt="Philadelphia 76ers">
+                </li>
+                <li>
+                    <img id="logo2" src="multimedia/este/pacers.png" alt="Indiana Pacers">
+                </li>
+                <li>
+                    <p>22:00 Bankers Life Fieldhouse, IND</p>
+                </li>
+            </ul>
+        </div>
+        <div class="container-partidos">
+            <!--Partido 4-->
+            <ul class="partido4">
+                <li>
+                    <img id="logo1" src="multimedia/oeste/clippers.png" alt="Los Angeles Clippers">
+                </li>
+                <li>
+                    <img id="logo2" src="multimedia/oeste/timberwolves.png" alt="Minnesota Timberwolves">
+                </li>
+                <li>
+                    <p>22:00 Target Center, MIN</p>
+                </li>
+            </ul>
+            <!--Partido 5-->
+            <ul class="partido5">
+                <li>
+                    <img id="logolakers" src="multimedia/oeste/lakers.png" alt="Los Angeles Lakers">
+                </li>
+                <li>
+                    <img id="logo2" src="multimedia/oeste/suns.png" alt="Phoenix Suns">
+                </li>
+                <li>
+                    <p>00:00 Footprint Center, PHX</p>
+                </li>
+            </ul>
+            <!--Partido 6-->
+            <ul class="partido6">
+                <li>
+                    <img id="logo1" src="multimedia/oeste/rockets.png" alt="Houston Rockets">
+                </li>
+                <li>
+                    <img id="logo2" src="multimedia/oeste/warriors.png" alt="Golden State Warriors">
+                </li>
+                <li>
+                    <p>00:00 Chase Center, SF</p>
+                </li>
+            </ul>
+        </div>
+        <div class="container-partidos">
+            <!--Partido 7-->
+            <ul>
+                <li>
+                    <img src="multimedia/oeste/mavericks.png" alt="Dallas Mavericks">
+                </li>
+                <li>
+                    <img src="multimedia/este/nets.png" alt="Brooklyn Nets">
+                </li>
+                <li>
+                    <p>21:30 Barclays Center, BK</p>
+                </li>
+            </ul>
+            <!--Partido 8-->
+            <ul>
+                <li>
+                    <img src="multimedia/oeste/thunder.png" alt="">
+                </li>
+                <li>
+                    <img src="multimedia/oeste/jazz.png" alt="">
+                </li>
+                <li>
+                    <p>23:00 Delta Center, UT</p>
+                </li>
+            </ul>
+            <!--Partido 9-->
+            <ul>
+                <li>
+                    <img src="multimedia/oeste/kings.png" alt="Sacramento Kings">
+                </li>
+                <li>
+                    <img src="multimedia/este/knicks.png" alt="New York Knicks">
+                </li>
+                <li>
+                    <p>21:30 Madison Square Garden, NY</p>
+                </li>
+            </ul>
+        </div>
+        <!--Fin Container-->
+        <footer>
+            <ul id="redes">
+                <li>
+                    <a href="https://www.instagram.com/nba/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/nba" target="_blank">X</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/nba" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@NBA" target="_blank">Youtube</a>
+                </li>
+            </ul>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
